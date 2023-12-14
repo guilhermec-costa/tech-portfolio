@@ -19,32 +19,34 @@
       href="https://fonts.googleapis.com/css2?family=Heebo&family=Montserrat&family=Poppins:wght@300;400&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <nav>
-      <h1 class="icon"><a id="top">Guilherme Costa</a></h1>
+      <h1 id="page-icon">Guilherme Costa</h1>
       <ul class="profile-extra-info">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#about" class="nav-link">Experience</a></li>
-        <li><a href="#about" class="nav-link">Projects</a></li>
-        <li><a href="#about" class="nav-link">Contact</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
-    <div class="top-section"></div>
+    <div support-field="navbar-aux"></div>
     <main>
       <section class="profile">
-        <div class="background-section"></div>
-        <div class="curve-section">
-          <div class="curve-left-side"></div>
-          <div class="curve-right-side"></div>
+        <div support-field="profile-aux"></div>
+        <div support-field="curve-section">
+          <div class="left" side-field></div>
+          <div class="right" side-field></div>
         </div>
-        <div class="profile-pic-section">
+        <section class="profile-pic" auxiliar>
           <img
             src="./profile-pic.jpeg"
             alt="profile-image"
-            class="profile-pic"
+            title="Profile Picture"
+            id="profile-pic"
           />
-        </div>
+        </section>
         <div class="profile-text-information">
           <h3 class="medium-grey">Hello, I'm</h3>
           <h2>Guilherme Costa</h2>
@@ -59,17 +61,25 @@
           </section>
           <section class="downloads">
             <a href="https://github.com/GuiC0506">
-              <img src="./github_icon.png" class="social-media-icon" />
+              <img
+                src="./github_icon.png"
+                class="social-media-icon"
+                alt="github-icon"
+              />
             </a>
             <a href="www.linkedin.com/in/guilherme-china-03b23b268">
-              <img src="./linkedin_iconn.png" class="social-media-icon" />
+              <img
+                src="./linkedin_iconn.png"
+                class="social-media-icon"
+                alt="linkedin-icon"
+              />
             </a>
           </section>
         </div>
       </section>
       <div class="profile-details">
         <section id="about" class="content-section">
-          <div class="section-title-subtitle">
+          <div title-subtitle>
             <h3 class="section-subtitle">Get to know more</h3>
             <h2 class="section-title first-section-title">About me</h2>
           </div>
@@ -97,36 +107,60 @@
               <h2>Hard skills</h2>
               <section class="skills-section">
                 <div class="skill">
-                  <img class="skill-icon" src="./python-logo.png" />
+                  <img
+                    class="skill-icon"
+                    src="./python-logo.png"
+                    alt="python-logo"
+                  />
                   <p class="skill-name">Python</p>
                 </div>
                 <div class="skill">
-                  <img class="skill-icon" src="./sql_icon.png" />
+                  <img class="skill-icon" src="./sql_icon.png" alt="sql-icon" />
                   <p class="skill-name">SQL</p>
                 </div>
                 <div class="skill">
-                  <img class="skill-icon" src="./database_icon.png" />
+                  <img
+                    class="skill-icon"
+                    src="./database_icon.png"
+                    alt="database-icon"
+                  />
                   <p class="skill-name">Oracle Database</p>
                 </div>
                 <div class="skill">
-                  <img class="skill-icon" src="./html_icon.png" />
+                  <img
+                    class="skill-icon"
+                    src="./html_icon.png"
+                    alt="html-icon"
+                  />
                   <p class="skill-name">HTML5</p>
                 </div>
                 <div class="skill">
-                  <img class="skill-icon" src="./css_icon.png" />
+                  <img class="skill-icon" src="./css_icon.png" alt="css-icon" />
                   <p class="skill-name">CSS</p>
                 </div>
                 <div class="skill">
-                  <img class="skill-icon" src="./js_icon.png" />
+                  <img
+                    class="skill-icon"
+                    src="./js_icon.png"
+                    alt="javascript-icon"
+                  />
                   <p class="skill-name">Javascript</p>
                 </div>
                 <div class="skill">
-                  <img class="skill-icon" src="./react_logo.png" />
+                  <img
+                    class="skill-icon"
+                    src="./react_logo.png"
+                    alt="react-logo"
+                  />
                   <p class="skill-name">React Fundamentals</p>
                 </div>
                 <div class="skill">
-                  <img class="skill-icon" src="./csharp_logo.png" />
-                  <p class="skill-name">.NET fundamentals</p>
+                  <img
+                    class="skill-icon"
+                    src="./csharp_logo.png"
+                    alt="c#-logo"
+                  />
+                  <p class="skill-name">.NET Fundamentals</p>
                 </div>
               </section>
             </div>
@@ -159,37 +193,93 @@
           </div>
         </section>
         <section id="projects" class="content-section">
-          <div class="section-title-subtitle">
+          <div title-subtitle>
             <h3 class="section-subtitle">Browse my recent</h3>
 
             <h2 class="section-title">Projects</h2>
           </div>
-          <div class="inner-content">
-            <h2>Projeto 1</h2>
-            <h2>Projeto 1</h2>
-            <h2>Projeto 1</h2>
-            <h2>Projeto 1</h2>
-          </div>
+          <section class="inner-content window-size">
+            <div class="carousel" data-carousel>
+              <button class="carousel-button prev" data-carousel-button="prev">
+                &lArr;
+              </button>
+              <button class="carousel-button next" data-carousel-button="next">
+                &rArr;
+              </button>
+              <ul data-slides>
+                <li class="slide dark-grey" data-active>
+                  <div inner-content>
+                    <h2 title>Particle Explosion</h2>
+                    <h3 subtitle>
+                      Application that generates particles randomly, and makes
+                      them explodes
+                    </h3>
+                  </div>
+                </li>
+                <li class="slide dark-grey">
+                  <div inner-content>
+                    <h2 title>Reactivities (on going)</h2>
+                    <h3 subtitle>
+                      Application that generates particles randomly, and makes
+                      them explodes
+                    </h3>
+                  </div>
+                </li>
+                <li class="slide dark-grey">
+                  <div inner-content>
+                    <h2 title>Particle Explosion</h2>
+                    <h3 subtitle>
+                      Application that generates particles randomly, and makes
+                      them explodes
+                    </h3>
+                  </div>
+                </li>
+                <li class="slide dark-grey">
+                  <div inner-content>
+                    <h2 title>Particle Explosion</h2>
+                    <h3 subtitle>
+                      Application that generates particles randomly, and makes
+                      them explodes
+                    </h3>
+                  </div>
+                </li>
+                <li class="slide dark-grey">
+                  <div inner-content>
+                    <h2 title>Particle Explosion</h2>
+                    <h3 subtitle>
+                      Application that generates particles randomly, and makes
+                      them explodes
+                    </h3>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
         </section>
         <section id="contact" class="content-section">
-          <div class="section-title-subtitle">
+          <div title-subtitle>
             <h3 class="section-subtitle">Get in Touch</h3>
             <h2 class="section-title">Contact me</h2>
           </div>
-          <div class="contact-box">
-            <p>guicosta@gmail.com</p>
-            <p>
-              <a href="www.linkedin.com/in/guilherme-china-03b23b268"></a
-              >Linkedin
-            </p>
+          <div id="contact-box">
+            <div class="contact-section-socialmedia">
+              <img src="./mail_icon.png" alt="email-icon" />
+              <p class="dark-grey-font">guicosta@gmail.com</p>
+            </div>
+            <div class="contact-section-socialmedia">
+              <img src="./linkedin_iconn.png" alt="linkedin-icon" />
+              <a
+                href="www.linkedin.com/in/guilherme-china-03b23b268"
+                class="dark-grey-font"
+                >Linkedin</a
+              >
+            </div>
           </div>
         </section>
+        <p id="copyright" class="medium-grey">
+          Copyright © 2023 Guilherme Costa. All Rights Reserverd.
+        </p>
       </div>
     </main>
-    <div class="test">
-      <a href="#top" class="back-to-top"
-        ><i class="fa-solid fa-arrow-up"></i
-      ></a>
-    </div>
   </body>
 </html>
