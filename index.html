@@ -19,16 +19,23 @@
       href="https://fonts.googleapis.com/css2?family=Heebo&family=Montserrat&family=Poppins:wght@300;400&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="./assets/page_logo.png" />
     <script src="./index.js" defer></script>
   </head>
   <body>
-    <nav>
+    <nav id="page-top">
       <h1 id="page-icon">Guilherme Costa</h1>
-      <ul class="profile-extra-info">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#about" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+      <ul class="profile-nav-links">
+        <li><a href="#about" class="nav-link" title="about">About</a></li>
+        <li>
+          <a href="#experience" class="nav-link" title="experiences"
+            >Experience</a
+          >
+        </li>
+        <li>
+          <a href="#projects" class="nav-link" title="projects">Projects</a>
+        </li>
+        <li><a href="#contact" class="nav-link" title="contact">Contact</a></li>
       </ul>
     </nav>
     <div support-field="navbar-aux"></div>
@@ -39,39 +46,53 @@
           <div class="left" side-field></div>
           <div class="right" side-field></div>
         </div>
-        <section class="profile-pic" auxiliar>
+        <div class="profile-pic" auxiliar>
           <img
-            src="./profile-pic.jpeg"
+            src="./assets/profile-pic.jpeg"
             alt="profile-image"
             title="Profile Picture"
             id="profile-pic"
           />
-        </section>
-        <div class="profile-text-information">
-          <h3 class="medium-grey">Hello, I'm</h3>
+        </div>
+        <div class="profile-introduction">
+          <h3 class="medium-grey section-subtitle">Hello, I'm</h3>
           <h2>Guilherme Costa</h2>
-          <h3 class="medium-grey">Fullstack Developer</h3>
+          <h3 class="medium-grey section-subtitle">
+            Software Engineering Student
+          </h3>
           <section class="downloads">
             <button class="download-info-btn cv-btn">
-              <h3>Download CV</h3>
+              <a href="./assets/cv.pdf" target="_blank" title="Download CV"
+                >Download CV</a
+              >
             </button>
             <button class="download-info-btn contact-btn">
-              <h3>Contact Info</h3>
+              <a href="#contact" title="See contact info">Contact Info</a>
             </button>
           </section>
           <section class="downloads">
-            <a href="https://github.com/GuiC0506">
+            <a
+              href="https://github.com/GuiC0506"
+              target="_blank"
+              title="Github link"
+            >
               <img
-                src="./github_icon.png"
+                src="./assets/github_icon.png"
                 class="social-media-icon"
                 alt="github-icon"
+                title="github link"
               />
             </a>
-            <a href="www.linkedin.com/in/guilherme-china-03b23b268">
+            <a
+              href="www.linkedin.com/in/guilherme-china-03b23b268"
+              target="_blank"
+              title="linkedin link"
+            >
               <img
-                src="./linkedin_iconn.png"
+                src="./assets/linkedin_iconn.png"
                 class="social-media-icon"
-                alt="linkedin-icon"
+                alt="linkedin"
+                title="linkedin"
               />
             </a>
           </section>
@@ -89,7 +110,7 @@
               id="education"
               class="left-side content dark-grey text-content"
             >
-              <h2 class="content-title">Education</h2>
+              <h2 class="content-title kinda-aqua">Education</h2>
               <p class="content">
                 I'm a learner at heart. High school at FAAT College set the
                 stage, and a semester exploring Data Science at FIAP fueled my
@@ -104,90 +125,111 @@
             <div class="right-side apoio"></div>
             <div class="left-side apoio"></div>
             <div class="right-side content">
-              <h2>Hard skills</h2>
-              <section class="skills-section">
+              <h2 class="content-title">Hard skills</h2>
+              <div class="skills-section">
                 <div class="skill">
                   <img
                     class="skill-icon"
-                    src="./python-logo.png"
+                    src="./assets/python-logo.png"
                     alt="python-logo"
+                    title="python"
                   />
                   <p class="skill-name">Python</p>
                 </div>
                 <div class="skill">
-                  <img class="skill-icon" src="./sql_icon.png" alt="sql-icon" />
+                  <img
+                    class="skill-icon"
+                    src="./assets/sql_icon.png"
+                    alt="sql-icon"
+                    title="SQL"
+                  />
                   <p class="skill-name">SQL</p>
                 </div>
                 <div class="skill">
                   <img
                     class="skill-icon"
-                    src="./database_icon.png"
+                    src="./assets/database_icon.png"
                     alt="database-icon"
+                    title="database"
                   />
                   <p class="skill-name">Oracle Database</p>
                 </div>
                 <div class="skill">
                   <img
                     class="skill-icon"
-                    src="./html_icon.png"
+                    src="./assets/html_icon.png"
                     alt="html-icon"
+                    title="html5"
                   />
                   <p class="skill-name">HTML5</p>
                 </div>
                 <div class="skill">
-                  <img class="skill-icon" src="./css_icon.png" alt="css-icon" />
+                  <img
+                    class="skill-icon"
+                    src="./assets/css_icon.png"
+                    alt="css-icon"
+                    title="css5"
+                  />
                   <p class="skill-name">CSS</p>
                 </div>
                 <div class="skill">
                   <img
                     class="skill-icon"
-                    src="./js_icon.png"
+                    src="./assets/js_icon.png"
                     alt="javascript-icon"
+                    title="javascript"
                   />
                   <p class="skill-name">Javascript</p>
                 </div>
                 <div class="skill">
                   <img
                     class="skill-icon"
-                    src="./react_logo.png"
+                    src="./assets/react_logo.png"
                     alt="react-logo"
+                    title="react"
                   />
                   <p class="skill-name">React Fundamentals</p>
                 </div>
                 <div class="skill">
                   <img
                     class="skill-icon"
-                    src="./csharp_logo.png"
+                    src="./assets/csharp_logo.png"
                     alt="c#-logo"
+                    title="c#"
                   />
                   <p class="skill-name">.NET Fundamentals</p>
                 </div>
-              </section>
+              </div>
             </div>
             <div class="left-side content dark-grey text-content">
-              <h2 class="content-title">Soft skills</h2>
+              <h2 class="content-title kinda-aqua">Soft skills</h2>
               <ul class="skills-list">
-                <li class="kinda-aqua">Critical Thought</li>
-                <li class="kinda-aqua">Analitycal Thought</li>
-                <li class="kinda-aqua">Adaptability</li>
-                <li class="kinda-aqua">Decision Making</li>
-                <li class="kinda-aqua">Creativity</li>
-                <li class="kinda-aqua">Comunicative</li>
-                <li class="kinda-aqua">Proativity</li>
-              </ul>
-            </div>
-            <div class="right-side apoio"></div>
-            <div class="left-side apoio"></div>
-            <div class="right-side content">
-              <h2 class="content-title">Experience</h2>
-              <ul class="skills-list">
-                <li class="">Programming</li>
-                <li class="">Play games</li>
-                <li class="">Soccer</li>
+                <li class="">Critical Thought</li>
+                <li class="">Analitycal Thought</li>
+                <li class="">Adaptability</li>
                 <li class="">Decision Making</li>
                 <li class="">Creativity</li>
                 <li class="">Comunicative</li>
                 <li class="">Proativity</li>
+                <li class="">Fast Learner</li>
+              </ul>
+            </div>
+            <div class="right-side apoio"></div>
+            <div class="left-side apoio"></div>
+            <div id="experience" class="right-side content">
+              <h2 class="content-title">Experience</h2>
+              <ul class="skills-list">
+                <li class="fill-line arrow left-align-text">
+                  <span class="role">Trainee Office Assistant</span> at
+                  <span class="company-name">Constanta Industrial Ltda</span>
+                  <p class="job-date">25 set, 2022 - 05 feb, 2023</p>
+                </li>
+                <li class="fill-line arrow left-align-text">
+                  <span class="role">Administrative Assistant</span>
+                  at
+                  <span class="company-name">Constanta Industrial Ltda</span>
+                  <p class="job-date">06 feb, 2023 - current</p>
+                </li>
               </ul>
             </div>
           </div>
@@ -198,7 +240,7 @@
 
             <h2 class="section-title">Projects</h2>
           </div>
-          <section class="inner-content window-size">
+          <section class="inner-content half-window-size">
             <div class="carousel" data-carousel>
               <button class="carousel-button prev" data-carousel-button="prev">
                 &lArr;
@@ -210,46 +252,107 @@
                 <li class="slide dark-grey" data-active>
                   <div inner-content>
                     <h2 title>Particle Explosion</h2>
+                    <img
+                      src="./assets/electron.png"
+                      alt="electron"
+                      title="electron"
+                      class="project-icon"
+                    />
                     <h3 subtitle>
-                      Application that generates particles randomly, and makes
-                      them explodes
+                      A desktop single-window application that generates
+                      particles randomly infinetly, and makes them explodes
+                      based on a pre-defined math function
                     </h3>
+                    <a
+                      href="https://github.com/GuiC0506/particle-explosion"
+                      repo-link
+                      target="_blank"
+                      title="Particle Explosion repo"
+                      >Go to the repository</a
+                    >
                   </div>
                 </li>
                 <li class="slide dark-grey">
                   <div inner-content>
                     <h2 title>Reactivities (on going)</h2>
                     <h3 subtitle>
-                      Application that generates particles randomly, and makes
-                      them explodes
+                      A fullstack social media application, like facebook, built
+                      on top of .NET Framework and React
                     </h3>
+                    <a
+                      href="https://github.com/GuiC0506/Reactivities"
+                      repo-link
+                      target="_blank"
+                      title="Reactivities repo"
+                      >Go to the repository</a
+                    >
                   </div>
                 </li>
                 <li class="slide dark-grey">
                   <div inner-content>
-                    <h2 title>Particle Explosion</h2>
+                    <h2 title>Everynet CLI Interface</h2>
+                    <img
+                      src="./assets/wifi.png"
+                      alt="wifi"
+                      title="wifi"
+                      class="project-icon"
+                    />
                     <h3 subtitle>
-                      Application that generates particles randomly, and makes
-                      them explodes
+                      Application that consumes an API from Everynet (Network
+                      server), to make CRUD operations for IoT devices via a
+                      command line interface
                     </h3>
+                    <a
+                      href="https://github.com/GuiC0506/everynet_project"
+                      repo-link
+                      target="_blank"
+                      title="Everynet app repo"
+                      >Go to the repository</a
+                    >
                   </div>
                 </li>
                 <li class="slide dark-grey">
                   <div inner-content>
-                    <h2 title>Particle Explosion</h2>
+                    <h2 title>SLA Real Time Monitoring</h2>
+                    <img
+                      src="./assets/line-chart.png"
+                      alt="line-chart"
+                      title="line-chart"
+                    />
                     <h3 subtitle>
-                      Application that generates particles randomly, and makes
-                      them explodes
+                      Real time data platform that monitors hundreds of
+                      thousands of IoT devices information, for various clients,
+                      through several dashboards
                     </h3>
+                    <a
+                      href="https://github.com/GuiC0506/SLA-Signal-Maps"
+                      repo-link
+                      target="_blank"
+                      title="SLA Monitor project repo"
+                      >Go to the repository</a
+                    >
                   </div>
                 </li>
                 <li class="slide dark-grey">
                   <div inner-content>
-                    <h2 title>Particle Explosion</h2>
+                    <h2 title>Weather App</h2>
+                    <img
+                      src="./assets/weather_icon.png"
+                      alt="weather"
+                      title="weather"
+                    />
                     <h3 subtitle>
-                      Application that generates particles randomly, and makes
-                      them explodes
+                      Application integrated with a weather rest API, to search
+                      general weather information about a given location, as
+                      well as forecast weather in a date period
                     </h3>
+                    <a
+                      href="https://github.com/GuiC0506/weatherApp"
+                      repo-link
+                      target="_blank"
+                      title="Wetaher app repo"
+                      >Go to the repository</a
+                    >
                   </div>
                 </li>
               </ul>
@@ -263,14 +366,24 @@
           </div>
           <div id="contact-box">
             <div class="contact-section-socialmedia">
-              <img src="./mail_icon.png" alt="email-icon" />
+              <img
+                src="./assets/mail_icon.png"
+                alt="email-icon"
+                title="email"
+              />
               <p class="dark-grey-font">guicosta@gmail.com</p>
             </div>
             <div class="contact-section-socialmedia">
-              <img src="./linkedin_iconn.png" alt="linkedin-icon" />
+              <img
+                src="./assets/linkedin_iconn.png"
+                alt="linkedin-icon"
+                title="linkedin"
+              />
               <a
                 href="www.linkedin.com/in/guilherme-china-03b23b268"
                 class="dark-grey-font"
+                target="_blank"
+                title="Linkedin"
                 >Linkedin</a
               >
             </div>
@@ -281,5 +394,12 @@
         </p>
       </div>
     </main>
+    <footer>
+      <div>
+        <a href="#page-top" class="back-to-top" title="Back to top"
+          ><i class="fa-solid fa-arrow-up"></i
+        ></a>
+      </div>
+    </footer>
   </body>
 </html>
