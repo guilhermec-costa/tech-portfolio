@@ -31,6 +31,10 @@
   color: var(--kinda-aqua);
 }
 
+.light-grey {
+  color: var(--light-grey);
+}
+
 body {
   background: var(--light-grey);
   position: relative;
@@ -175,6 +179,8 @@ main {
   border-radius: 50%;
   filter: brightness(75%) saturate(100%) grayscale(100%);
 }
+
+/* DOWNLOADS */
 
 .downloads {
   display: flex;
@@ -349,7 +355,6 @@ main {
 .side-border-frontier {
   position: absolute;
   height: 105%;
-  /* width: 1.2px; */
   border: 2px dashed rgb(163, 163, 163);
   opacity: 0.5;
 }
@@ -363,16 +368,8 @@ p.content {
   font-size: 1.1rem;
 }
 
-.back-to-top {
-  font-size: 2.6rem;
-  position: fixed;
-  bottom: 0.7vw;
-  right: 1vw;
-  color: #161a30;
-  z-index: 10;
-}
-
 /* SKILLS */
+
 .skills-section {
   margin-top: 1rem;
   display: flex;
@@ -413,15 +410,26 @@ p.content {
   font-size: 1.1rem;
 }
 
+/* EXPERIENCES */
+
 li.left-align-text {
   text-align: start;
+}
+
+.centered-align-text {
+  text-align: center;
 }
 
 li.fill-line {
   flex-basis: 80%;
 }
 
-#experience li {
+.default-font {
+  font-size: 1rem;
+}
+
+#experience li,
+#education li {
   list-style-position: inside;
   list-style-type: disc;
 }
@@ -430,6 +438,14 @@ li.fill-line {
   color: var(--dark-grey);
 }
 
+#education li {
+  list-style: none;
+}
+
+.custom-marker {
+  color: var(--light-grey);
+  margin-right: 0.6rem;
+}
 .job-date {
   font-size: 1rem;
   color: var(--medium-grey);
@@ -442,11 +458,14 @@ li.fill-line {
   font-weight: bold;
 }
 
-.company-name {
+.company-name,
+.college {
   color: #e36414;
   font-weight: bold;
   font-size: 1.125rem;
 }
+
+/* CONTACT  */
 
 #contact-box {
   min-width: 28%;
@@ -577,6 +596,15 @@ button.prev {
 
 button.next {
   right: -9%;
+}
+
+.back-to-top {
+  font-size: 2.6rem;
+  position: fixed;
+  bottom: 0.7vw;
+  right: 1vw;
+  color: #161a30;
+  z-index: 10;
 }
 
 #copyright {
